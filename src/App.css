@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.section{
+  position: relative;
+} 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.share-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  right: 20%;
+  top: 40px;
+  background-color: white;
+  border: 1px dashed #d0d5dd;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.1s;
+}
+  .share-container:hover {
+    background-color: #f2f4f7;
+  }
+  .share-container:focus {
+    box-shadow: 0px 0px 0px 4px #f2f4f7;
+  }
+
+  .svg1 {
+      font-size: 24px;
+      color: #98a2b3;
+    }
+    .svg2 {
+      display: none;
+    }
+    .tooltiptext {
+      display: none;
+      position: absolute;
+      top: 5px;
+      right: 30px;
+    }
+    .cursor {
+      display: none;
+      text-align: center;
+      padding: 8px, 12px;
+      position: absolute;
+      top: 25px;
+      left: 30px;
+    }
+
+    .share-container:hover .tooltiptext {
+      display: block;
+    }
+
+    .share-container:hover .cursor {
+      display: block;
+    }
+
+a{
+  text-decoration: none;
+  color:black;
 }
 
-.App-link {
-  color: #61dafb;
+.links{
+  display: block;
+}
+.footer-one-container{
+  width: fit-content;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.first-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  width: 85vw;
+  
+}
+.sub{
+  padding: 24px 0px 24px 0px;
+}
+
+.footer-two-container{
+  margin: auto;
+  width: fit-content;
+}
+
+.second-footer{
+  margin-top: 64px;
+  padding: 48px 0px 48px 0px;
+  width: 85vw;
+  
+}
+
+.sub-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 36px 0px 36px 0px;
+  border-top: 1px solid #EAECF0;
+}
+
+#footer-text{
+  color: #667085;
+}
+
+@media(max-width: 500px){
+  .sub-footer{
+      display: block;
+      padding-left: 16px;
+      padding-right: 16px;
   }
-  to {
-    transform: rotate(360deg);
+  #footer-text{
+      padding: 30px 0px 30px 0px;
+
   }
+  .svg1 {
+      display: none;
+    }
+    .svg2 {
+      display: block;
+    }
+    .share-container:hover .tooltiptext {
+      display: none;
+    }
+
+    .share-container:hover .cursor {
+      display: none;
+    }
+
 }

@@ -1,0 +1,44 @@
+#container{
+    width: 80vw;
+    padding-top: 64px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#profile__img{
+    position:relative;
+} 
+
+.imageHover{
+    position: absolute;
+    opacity: 0;
+}
+
+.imageFocus{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    
+}
+
+.imageHover:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imageFocus:focus{
+    opacity: 1;
+    cursor: pointer;
+    visibility: visible;
+}
+
+#twitter{
+    margin-top: 24px;
+    font-weight: bolder;
+}
+
+.slack{
+    display:none;
+}

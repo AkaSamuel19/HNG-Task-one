@@ -1,0 +1,33 @@
+.button-container{
+    margin: auto;
+    width: fit-content;
+    width: -moz-fit-content; 
+    
+}
+
+a.buttons{  
+    width: 85vw;
+    height: 76px;
+    font-size: 18px;
+    border: none; 
+    display: block;
+    padding: 24px 32px 24px 32px;
+    background-color: #EAECF0;
+    text-align: center;
+    border-radius: 8px;
+    margin-top: 24px;
+}
+
+a.buttons:hover{
+    background-color: #D0D5DD;
+}
+
+a.buttons:focus{
+    background-color: #EAECF0;
+    border: 1px solid #98A2B3;
+}
+
+a.buttons:disabled{
+    background-color: #FCFCFD;
+    border: 1px solid #F2F4F7;
+}
